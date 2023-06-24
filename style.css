@@ -1,34 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 #main {
   width: 100%;
   height: 100%;
   background-color: #58b19f;
+
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(171, 171, 171, 1) 0%,
+    rgba(137, 137, 163, 0.9668242296918768) 53%,
+    rgba(76, 103, 108, 1) 100%
+  );
 }
 
 .note {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 500px;
   margin: 15px;
-  background-color: #f8efba;
+  background-color: none;
   margin-top: 55px;
-  box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 0px 0px 29px rgba(0, 0, 0, 0.75); */
 }
 
 .tool {
   width: 100%;
-  background-color: #2c3a47;
+  background-color: #06091d;
   color: white;
   padding: 5px;
+  border-radius: 12px 12px 0px 0px;
   display: flex;
   justify-content: end;
 }
@@ -40,14 +49,17 @@
 
 .note textarea {
   border: none;
+  border-radius: 0px 0px 12px 12px;
   width: 100%;
   height: 100%;
   resize: none;
-  background-color: #f8efba;
+  background-color: #06091d;
+  text-shadow: 0px 0px 30px black;
   padding: 10px;
   font-size: 17px;
   font-weight: bold;
   transition: 1s;
+  color: whitesmoke;
 }
 
 .note textarea:focus {
@@ -59,7 +71,7 @@
   position: fixed;
   right: 15px;
   top: 45px;
-  background-color: #2c3a47;
+  background-color: #06091d;
   color: white;
   padding: 10px;
   border: 0;
@@ -72,13 +84,24 @@
 
 #addBtn:hover {
   transform: scale(1.2) rotate(10deg);
-  background-color: #2c3a47;
+  background-color: #06091d;
   color: white;
+  box-shadow: 0px 0px 29px black;
 }
 
 .heading {
-  color: white;
-  background-color: #2c3a47;
+  color: whitesmoke;
+  box-shadow: 10px 10px 29px black;
+  background: linear-gradient(
+    90deg,
+    rgba(171, 171, 171, 1) 0%,
+    rgba(137, 137, 163, 0.9668242296918768) 53%,
+    rgba(76, 103, 108, 1) 100%
+  );
   display: flex;
   justify-content: center;
+}
+
+.heading h1 {
+  text-shadow: 0px 0px 30px black;
 }
